@@ -1,13 +1,15 @@
 package guru.springframework.sfgpetclinic.model;
 
-public class BaseEntity {
-    private Integer Id;
+import java.io.Serializable;
 
-    public Integer getId() {
+public class BaseEntity implements Serializable {
+    private Long Id;
+
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 }
